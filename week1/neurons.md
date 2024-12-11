@@ -26,17 +26,13 @@ An artificial neuron works in two main steps:
 
 1. **Weighted Sum**: The neuron first calculates the sum of each input multiplied by its corresponding weight.
 
-   \[
-   H = (X_1 \times W_1) + (X_2 \times W_2) + (X_3 \times W_3) + \dots
-   \]
+   ![equation](http://latex.codecogs.com/gif.latex?H%20=%20(X_1%20\times%20W_1)%20+%20(X_2%20\times%20W_2)%20+%20(X_3%20\times%20W_3)%20+%20\dots)
 
 2. **Activation Function**: After calculating the weighted sum, the neuron applies an **activation function** to the result. This function is usually a non-linear function like the **sigmoid function**, which helps the model learn more complex patterns.
 
    The sigmoid function looks like this:
 
-   \[
-   f(H) = \frac{1}{1 + e^{-H}}
-   \]
+   ![equation](http://latex.codecogs.com/gif.latex?f(H)%20=%20\frac{1}{1%20+%20e^{-H}})
 
    This function squashes the output between 0 and 1, which is useful for making decisions or classifications.
 
@@ -44,27 +40,23 @@ An artificial neuron works in two main steps:
 
 Let’s say we have three inputs:
 
-- \( X_1 = 0.5 \)
-- \( X_2 = 0.3 \)
-- \( X_3 = 0.2 \)
+- ![equation](http://latex.codecogs.com/gif.latex?%20X_1%20=%200.5%20)
+- ![equation](http://latex.codecogs.com/gif.latex?%20X_2%20=%200.3%20)
+- ![equation](http://latex.codecogs.com/gif.latex?%20X_3%20=%200.2%20)
 
 And their respective weights:
 
-- \( W_1 = 0.4 \)
-- \( W_2 = 0.7 \)
-- \( W_3 = 0.2 \)
+- ![equation](http://latex.codecogs.com/gif.latex?%20W_1%20=%200.4%20)
+- ![equation](http://latex.codecogs.com/gif.latex?%20W_2%20=%200.7%20)
+- ![equation](http://latex.codecogs.com/gif.latex?%20W_3%20=%200.2%20)
 
-First, we calculate the weighted sum \( H \):
+First, we calculate the weighted sum ![equation](http://latex.codecogs.com/gif.latex?H):
 
-\[
-H = (0.5 \times 0.4) + (0.3 \times 0.7) + (0.2 \times 0.2) = 0.45
-\]
+![equation](http://latex.codecogs.com/gif.latex?H%20=%20(0.5%20\times%200.4)%20+%20(0.3%20\times%200.7)%20+%20(0.2%20\times%200.2)%20=%200.45)
 
-Next, we apply the sigmoid activation function to \( H \):
+Next, we apply the sigmoid activation function to ![equation](http://latex.codecogs.com/gif.latex?H):
 
-\[
-f(0.45) = \frac{1}{1 + e^{-0.45}} \approx 0.61
-\]
+![equation](http://latex.codecogs.com/gif.latex?f(H)%20=%20\frac{1}{1%20+%20e^{-H}})
 
 So, the output of the neuron in this case is approximately **0.61**.
 
